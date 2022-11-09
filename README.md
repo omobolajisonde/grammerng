@@ -1,4 +1,4 @@
-# HNGi9 Grammerly
+# Project Name
 
 # API Reference
 - Base URL: https://
@@ -34,7 +34,7 @@
 `GET /question`
 
 Randomly gets a question from a bank of questions to ask the user.
-- Request body (JSON): None
+- Request body: None
 
 - Response:
 
