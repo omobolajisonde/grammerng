@@ -121,7 +121,7 @@ SUCCESS
     "id": "conversationId",
     "errorFreeText": "Error free Transcribed audio",
     "errorFreeAudio": "Error free audio",
-    "rsponse": "AI bot's success response both audio and text_format.",
+    "response": "AI bot's success response both audio and text_format.",
 }
 
 ```
@@ -131,11 +131,11 @@ ERROR
 
 ```json
 {
-    "status": "erro",
+    "status": "error",
     "id": "conversationId",
     "errorFreeText": "Error Transcribed audio",
     "errorFreeAudio": "Error audio",
-    "rsponse": "AI bot's error response both audio and text_format.",
+    "response": "AI bot's error response both audio and text_format.",
     
 }
 ```
