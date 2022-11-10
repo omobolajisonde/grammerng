@@ -1,8 +1,7 @@
 # Gritty grammar
 
 # API OVERVIEW
-Project name, is a grammar checking and correction tool that check users grammar and make necessary correction.
-APIs Application Programming Interfaces or APIs are what drives (project name here) and it's organized around REST.
+Application Programming Interfaces or APIs are what drives Gritty grammar and it is organized around a Representational State Transfer (REST).
 
 # API Reference
 - Base URL: https://
@@ -67,10 +66,9 @@ SUCCESS
 
 ```json
 {   
+     "status": "success",
     "username": "jondoe",
-    "password": "qwerty",
     "email": "js@gmail.com",
-    "password": "$2a$10$lZ8gnk/nC3m6dFHj4a86eeHBiwG3b/82HpjLaaMtACECAh3XnsIxq",
     "verified": true,
     "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzMTI0NGY2YWVhZGE1ZTMyM2M2OTQ5YSIsImVtYWlsIjoid2FsZXR0OTVAZ21haWwuY29tIiwiaWF0IjoxNjY4MDcxNzk0fQ.y0RCIrFdN5IUq7K2mAIaEPtVlTgOzvFVU1R5CZ6qoK8",
     "createdAt": "2022-09-02T18:01:26.376Z",
