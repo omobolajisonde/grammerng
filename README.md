@@ -9,7 +9,7 @@ APIs Application Programming Interfaces or APIs are what drives (project name he
 
 ## Endpoints
 
-`POST /signup`
+`POST /api/signup`
 
 - Request body (JSON):
 
@@ -23,7 +23,7 @@ APIs Application Programming Interfaces or APIs are what drives (project name he
 ```
 - Response:
 
-`POST /signin`
+`POST /api/signin`
 
 - Request body (JSON):
 
@@ -35,43 +35,55 @@ APIs Application Programming Interfaces or APIs are what drives (project name he
 ```
 - Response:
 
-`GET /question`
+`post /api/conversation`
 
-Randomly gets a question from a bank of questions to ask the user.
-- Request body: None
+starts conversation with our api.
+
+Reuest body:
+
+```json
+{
+    "conversation_in_Text_Format": "Conversation.txt",
+
+}
+
+OR
+
+{
+
+    "conversation_In_Audio_Format": "<conversation.mp3>",
+}
+
+```
+Sends back a response with both text and  audio.
 
 - Response:
 
-Success
+SUCCESS
 
 ```json
 {
     "status": "success",
-    "id": "questionId",
-    "question": "AI bot's question to the user.",
-}
-```
-
-`POST /answer`
-
-Sends back a request with the audio answer to the question.
-- Request body (JSON):
-
-```json
-{
-    "id": "questionId",
-    "answer": "<answer.mp3>"
-}
-```
-
-- Response:
-
-Success
-
-```json
-{
-    "status": "success",
+    "id": "conversationId",
     "errorFreeText": "Error free Transcribed audio",
-    "errorFreeAudio": "Error free audio"
+    "errorFreeAudio": "Error free audio",
+    "rsponse": "AI bot's success response both audio and text_format.",
+}
+
+```
+
+
+ERROR
+
+```json
+{
+    "status": "erro",
+    "id": "conversationId",
+    "errorFreeText": "Error Transcribed audio",
+    "errorFreeAudio": "Error audio",
+    "rsponse": "AI bot's error response both audio and text_format.",
+    
 }
 ```
+
+
