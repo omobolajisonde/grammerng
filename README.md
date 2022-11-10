@@ -1,5 +1,9 @@
 # Project Name
 
+# API OVERVIEW
+Project name, is a grammar checking and correction tool that check users grammar and make necessary correction.
+APIs Application Programming Interfaces or APIs are what drives (project name here) and it's organized around REST.
+
 # API Reference
 - Base URL: https://
 
