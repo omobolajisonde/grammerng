@@ -26,6 +26,7 @@ SUCCESS
 
 ```json
 {
+    "status": "success",
    "username": "jondoe",
     "email": "js@gmail.com",
     "password": "$2a$10$hjY6qClu02ghKlof4Ae1CeOjSb96jGX3rx.nKK7SfKVtW3gG05g.a",
